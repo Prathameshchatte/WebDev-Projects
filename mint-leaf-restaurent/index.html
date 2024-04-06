@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MintLeaf Vegetarian Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to MintLeaf</h1>
+            <p>Indulge in exquisite vegetarian delights!</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>MintLeaf is a premium vegetarian restaurant dedicated to serving delicious and healthy plant-based meals.
+                Our chefs craft each dish with passion and creativity, ensuring a delightful dining experience for our
+                guests.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="/shahi-biryani/shahi-dum.jpg" alt="Service 1">
+                    <h3>Customized Catering</h3>
+                    <p>We offer tailored catering services for events and parties, providing a diverse selection of
+                        vegetarian dishes to suit every palate.</p>
+                </div>
+                <div class="service">
+                    <img src="/shahi-biryani/shahi-dum.jpg" alt="Service 2">
+                    <h3>Private Dining</h3>
+                    <p>Experience the ultimate in luxury dining with our private dining options, perfect for special
+                        occasions and intimate gatherings.</p>
+                </div>
+                <div class="service">
+                    <img src="/shahi-biryani/shahi-dum.jpg" alt="Service 3">
+                    <h3>Delivery</h3>
+                    <p>Enjoy MintLeaf's delicious offerings in the comfort of your own home with our convenient delivery
+                        service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="/shahi-biryani/shahi-dum.jpg" alt="Dish 1">
+                    <h3>Vegetable Curry</h3>
+                    <p>Aromatic blend of fresh vegetables simmered in rich spices.</p>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item">
+                    <img src="/shahi-biryani/shahi-dum.jpg" alt="Dish 2">
+                    <h3>Quinoa Salad</h3>
+                    <p>Refreshing salad featuring quinoa, mixed greens, and tangy dressing.</p>
+                    <span>$8</span>
+                </div>
+                <div class="menu-item">
+                    <img src="/shahi-biryani/shahi-dum.jpg" alt="Dish 3">
+                    <h3>Veggie Burger</h3>
+                    <p>Satisfying burger made with a savory vegetable patty and gourmet toppings.</p>
+                    <span>$12</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="tel" id="mobile" placeholder="Your Mobile Number" required>
+                <textarea id="address" placeholder="Your Address" required></textarea>
+                <select id="menu-items" required>
+                    <option value="" disabled selected>Select Menu Item</option>
+                    <option value="Vegetable Curry">Vegetable Curry - $10</option>
+                    <option value="Quinoa Salad">Quinoa Salad - $8</option>
+                    <option value="Veggie Burger">Veggie Burger - $12</option>
+                </select>
+                <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+                <button type="button" id="add-item" class="btn">Add Item</button>
+                <button type="button" id="show-bill" class="btn">Show Bill</button>
+                <div id="bill-details"></div>
+                <div id="total-price">Total: $0.00</div>
+                <button type="button" id="payment-button" class="btn">Proceed to Payment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MintLeaf Vegetarian Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission -->
+    <script src="script.js"></script>
+</body>
+
+</html>
