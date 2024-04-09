@@ -1,0 +1,526 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    /* background-color: #F8F9FA; */
+    background-color: #DFF5FF;
+    font-family: "Open Sans", sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #6a6a6b;
+}
+
+section {
+    padding: 70px 0;
+    /* position: relative; */
+}
+
+.width45 {
+    width: 45%;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+/*Css for header */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 40px;
+    align-items: center;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+nav .logo {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .navbar ul li{
+    padding: 10px;
+} */
+.navbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-wrapper-flex {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+    justify-content: space-around;
+}
+
+/*Css for hero section*/
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.self-img img {
+    width: 320px;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    background-color: rgb(255, 255, 81);
+    box-shadow: 3px 4px 15px #6db3e7;
+}
+
+/*css for resume section */
+#resume {
+    background-color: white;
+}
+
+.card {
+    background-color: #DFF5FF;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 6px #024AB9;
+}
+
+
+/*css for project section*/
+#projects .container-wrapper-flex {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 3px 3px 0 #024AB9;
+
+}
+
+.project-card img {
+    width: 80%;
+    /* height: 300px; */
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #024AB9;
+    ;
+}
+
+.project-card:hover {
+    transform: rotate(10deg);
+    /* background-color: #f1e76e; */
+    box-shadow: 0px 2px 10px #024AB9;
+    ;
+}
+
+/*css for skills section*/
+.container-wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+
+#skills {
+    background-color: rgb(255, 255, 255);
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+}
+
+
+.skill-card {
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    background-color: #DFF5FF;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px #024AB9;
+    font-weight: 600;
+}
+
+.skill-card:hover {
+    transform: scale(1.12);
+    background-color: #f1e76e;
+}
+
+
+.skill-card img {
+    width: 80px;
+}
+
+
+#projects h2 , #skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.badge-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.badge-card img {
+    width: 150px;
+}
+
+.social-media-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.social-media-list i {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+.contact-info,
+.contact-img {
+    text-align: center;
+}
+
+.contact-img img {
+    width: 80%;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+footer p{
+    color: white !important;
+}
+
+@media only screen and (max-width:1200px) and (min-width:980px) {
+    .container {
+        width: 90%;
+
+    }
+
+    .project-card {
+        width: 230px;
+    }
+
+    .skill-info {
+        padding: 25px 20px;
+    }
+
+    .self-img img {
+        width: 250px;
+    }
+
+    .container-wrapper-flex {
+        gap: 50px;
+    }
+
+    #projects .container-wrapper-flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:979px) and (min-width:680px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .container-wrapper-flex {
+        gap: 25px;
+    }
+
+    .self-img img {
+        width: 250px;
+    }
+
+    #projects .container-wrapper-flex {
+        flex-wrap: wrap;
+        /* gap: 20px; */
+    }
+
+    .container-wrapper-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .skill-card img {
+        width: 60px;
+    }
+
+    .project-card {
+        width: 210px;
+        padding: 10px;
+    }
+
+    .project-card img {
+        width: 70%;
+    }
+
+    .skill-info {
+        padding: 25px 20px;
+        margin: 0;
+    }
+
+    .badge-card img {
+        width: 120px;
+    }
+
+    .badge-card {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:679px) and (min-width:480px) {
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-wrapper-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
+
+    .self-img img {
+        width: 150px;
+    }
+
+    #resume .container-wrapper-flex {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+        flex-direction: row;
+    }
+
+    .experience,
+    .education {
+        width: 50%;
+    }
+
+    #projects .container-wrapper-flex {
+        flex-wrap: wrap;
+    }
+
+    .skill-card {
+        width: 130px;
+        height: 130px;
+    }
+
+    .skill-card img {
+        width: 50px;
+    }
+
+    .project-card {
+        width: 170px;
+        padding: 10px;
+    }
+
+    .skill-info {
+        padding: 25px 20px;
+        margin: 0;
+    }
+
+    .badge-card img {
+        width: 90px;
+    }
+
+    .badge-card {
+        padding: 5px;
+    }
+
+    .contact-info,
+    .contact-img {
+        text-align: left;
+    }
+
+    .width45 {
+        width: unset
+    }
+}
+
+@media only screen and (max-width:479px) {
+
+    /* .self-img img{
+        width: 150px;
+    } */
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #hero {
+        height: unset;
+    }
+
+    .self-img img {
+        width: 180px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .logo{
+        font-size: 25px;
+    }
+    .navbar a{
+        padding: 10px 5px;
+    }
+
+    .container-wrapper-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-wrapper-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+
+    .skill-card p {
+        font-size: 14px;
+    }
+
+    .skill-card img {
+        width: 35px;
+    }
+
+    .skill-card {
+        align-items: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-card img {
+        width: 120px;
+        /* height: 300px; */
+    }
+
+    .project-card {
+        width: 250px;
+        padding: 20px;
+
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+    #skills .container-wrapper-flex{
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: row;
+    }
+    .badge-card {
+        padding: 10px;
+    }
+    .badge-card img{
+        width: 120px;
+    }
+    .width45{
+        width: unset;
+    }
+    .experience, .education{
+        width: 100%;
+    }
+}
+
+.footer-menu{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-menu li a{
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
